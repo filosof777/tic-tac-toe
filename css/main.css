@@ -370,8 +370,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "sans", sans-serif;
-  background-color: #fff;
+  background-color: #282A36;
 }
 
 h1,
@@ -403,12 +402,71 @@ img {
   height: auto;
 }
 
-.row-mrg {
-  margin: 0;
+.game__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 650px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 
-.col-pdg {
-  padding: 0;
+.game__item {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  border: 1px solid #111;
+  border-radius: 5px;
+  background-color: #78BFC5;
+}
+
+.fas {
+  font-size: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 400;
+  width: 200px;
+  height: 200px;
+}
+
+.far {
+  font-size: 80px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  width: 200px;
+  height: 200px;
 }
 
 /* VISUALLY-HIDDEN */
